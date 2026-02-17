@@ -12,6 +12,20 @@ Next.js + Prisma + PostgreSQL application for rapid film equipment enquiries, av
 - Policy pages, robots.txt and sitemap
 
 ## Runbook
+### Open a local preview
+Option A (Docker, recommended)
+1. Copy `.env.example` to `.env`.
+2. Start services: `docker compose up --build`.
+3. Open `http://localhost:3000` in your browser.
+
+Option B (Node)
+1. Copy `.env.example` to `.env`.
+2. Install deps: `npm install`.
+3. Run database migrations: `npx prisma migrate dev --name init`.
+4. Seed inventory/admin user: `npm run prisma:seed`.
+5. Start dev server: `npm run dev`.
+6. Open `http://localhost:3000` in your browser.
+
 ### Local development
 1. Copy `.env.example` to `.env` and adjust values.
 2. Start PostgreSQL and app: `docker compose up --build`.
