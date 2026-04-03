@@ -116,16 +116,12 @@ export default function QuranPage() {
 const styles: Record<string, React.CSSProperties> = {
   wrapper: {
     minHeight: '100vh',
-    background: 'linear-gradient(160deg, #0a0f1a 0%, #0d1f2d 40%, #122a3a 70%, #0a0f1a 100%)',
+    background: 'transparent',
     position: 'relative',
     overflow: 'hidden',
   },
   overlay: {
-    position: 'absolute',
-    inset: 0,
-    background:
-      'radial-gradient(ellipse at 50% 0%, rgba(212, 175, 55, 0.06) 0%, transparent 60%), radial-gradient(ellipse at 50% 100%, rgba(212, 175, 55, 0.03) 0%, transparent 50%)',
-    pointerEvents: 'none',
+    display: 'none',
   },
   container: {
     position: 'relative',
@@ -158,12 +154,11 @@ const styles: Record<string, React.CSSProperties> = {
     gap: '2.5rem',
   },
   verseCard: {
-    background: 'rgba(255, 255, 255, 0.03)',
-    border: '1px solid rgba(212, 175, 55, 0.12)',
+    background: 'transparent',
+    border: '1px solid rgba(212, 175, 55, 0.15)',
     borderRadius: '16px',
     padding: '2.5rem 2rem',
     position: 'relative',
-    backdropFilter: 'blur(10px)',
   },
   verseNumber: {
     position: 'absolute',
