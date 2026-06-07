@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Big Almaty Lake">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e7490"/><stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#sky)"/>
+  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
+  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#155e63" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#0e7490" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#0b3b40" opacity="1"/>
+  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
+  <g transform="translate(384,688) scale(1.15)">
+    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#1d2b45"/>
+    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#1d2b45"/>
+    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
+    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
+    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
+    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
+    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+  </g>
+  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Big Almaty Lake</text>
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+</svg>
