@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Tamgaly-Tas">
+  <defs>
+    <linearGradient id="ttSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3d3a6a"/>
+      <stop offset="0.5" stop-color="#c8794a"/>
+      <stop offset="1" stop-color="#f4cf92"/>
+    </linearGradient>
+    <radialGradient id="ttSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff1cf"/>
+      <stop offset="0.4" stop-color="#ffd27a" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ttHillFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a7e74"/>
+      <stop offset="1" stop-color="#76604f"/>
+    </linearGradient>
+    <linearGradient id="ttHillMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a6048"/>
+      <stop offset="1" stop-color="#5e3f2c"/>
+    </linearGradient>
+    <linearGradient id="ttRiver" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fb4cf"/>
+      <stop offset="0.5" stop-color="#4f8aae"/>
+      <stop offset="1" stop-color="#2e6385"/>
+    </linearGradient>
+    <linearGradient id="ttBank" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a523a"/>
+      <stop offset="1" stop-color="#523221"/>
+    </linearGradient>
+    <linearGradient id="ttRock" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#caa07e"/>
+      <stop offset="0.55" stop-color="#9c7152"/>
+      <stop offset="1" stop-color="#6b4631"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#ttSky)"/>
+  <circle cx="900" cy="190" r="240" fill="url(#ttSun)"/>
+  <circle cx="900" cy="190" r="50" fill="#fff1cf"/>
+
+  <!-- far hills -->
+  <polygon points="0,330 200,270 420,330 640,275 860,330 1080,280 1200,320 1200,420 0,420" fill="url(#ttHillFar)" opacity="0.85"/>
+
+  <!-- mid hills -->
+  <polygon points="0,420 220,360 460,420 700,365 940,420 1160,375 1200,400 1200,470 0,470" fill="url(#ttHillMid)"/>
+
+  <!-- Ili River bend -->
+  <path d="M0,470 C200,500 360,470 520,510 C700,556 760,600 1200,560 L1200,680 C780,720 640,672 460,632 C320,602 140,610 0,600 Z" fill="url(#ttRiver)"/>
+  <!-- sun glint on water -->
+  <g fill="#ffe7b0" opacity="0.5">
+    <ellipse cx="820" cy="560" rx="70" ry="6"/>
+    <ellipse cx="700" cy="580" rx="50" ry="5"/>
+    <ellipse cx="930" cy="540" rx="40" ry="4"/>
+  </g>
+  <!-- river ripples -->
+  <g stroke="#cfe8ff" stroke-width="2" opacity="0.3" fill="none">
+    <path d="M200,540 q50,-7 100,0"/>
+    <path d="M500,580 q55,-8 110,0"/>
+  </g>
+
+  <!-- far bank strip -->
+  <polygon points="0,470 220,448 460,478 700,452 940,480 1200,455 1200,500 0,500" fill="#6b4a35" opacity="0.6"/>
+
+  <!-- near rocky bank (foreground, bottom) -->
+  <polygon points="0,750 0,580 200,600 460,632 640,672 1200,680 1200,750" fill="url(#ttBank)"/>
+
+  <!-- carved petroglyph boulders on the bank -->
+  <!-- boulder 1 (left) -->
+  <g transform="translate(220,610)">
+    <path d="M-80,40 Q-90,-30 -40,-58 Q20,-78 70,-44 Q96,-18 84,40 Z" fill="url(#ttRock)"/>
+    <path d="M-80,40 Q-90,-30 -40,-58 Q20,-78 70,-44" fill="none" stroke="#e8c9a6" stroke-width="2" opacity="0.4"/>
+    <!-- petroglyph: standing figure (abstract) -->
+    <g stroke="#3a2415" stroke-width="3" fill="none" stroke-linecap="round">
+      <circle cx="-26" cy="-26" r="7"/>
+      <line x1="-26" y1="-19" x2="-26" y2="6"/>
+      <line x1="-26" y1="-12" x2="-40" y2="-2"/>
+      <line x1="-26" y1="-12" x2="-12" y2="-2"/>
+      <line x1="-26" y1="6" x2="-38" y2="22"/>
+      <line x1="-26" y1="6" x2="-14" y2="22"/>
+    </g>
+    <!-- petroglyph: sun symbol -->
+    <g stroke="#3a2415" stroke-width="2.5" fill="none">
+      <circle cx="40" cy="-22" r="9"/>
+      <line x1="40" y1="-38" x2="40" y2="-32"/>
+      <line x1="40" y1="-12" x2="40" y2="-6"/>
+      <line x1="24" y1="-22" x2="30" y2="-22"/>
+      <line x1="50" y1="-22" x2="56" y2="-22"/>
+    </g>
+  </g>
+
+  <!-- boulder 2 (center) larger -->
+  <g transform="translate(640,640)">
+    <path d="M-110,50 Q-126,-50 -50,-86 Q40,-118 110,-62 Q146,-20 128,50 Z" fill="url(#ttRock)"/>
+    <path d="M-110,50 Q-126,-50 -50,-86 Q40,-118 110,-62" fill="none" stroke="#e8c9a6" stroke-width="2.5" opacity="0.4"/>
+    <!-- crack lines -->
+    <path d="M-40,-60 L-20,10 M40,-70 L30,20" stroke="#5e3f2c" stroke-width="2" opacity="0.4" fill="none"/>
+    <!-- petroglyph: ibex/deer with antlers (abstract) -->
+    <g stroke="#3a2415" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-50,-10 L-50,-34 L0,-34 L0,-10"/>
+      <line x1="-50" y1="-10" x2="-58" y2="14"/>
+      <line x1="-32" y1="-10" x2="-36" y2="14"/>
+      <line x1="-18" y1="-10" x2="-14" y2="14"/>
+      <line x1="0" y1="-10" x2="6" y2="14"/>
+      <path d="M0,-34 L18,-44 L14,-30"/>
+      <path d="M18,-44 L26,-58 M18,-44 L30,-50"/>
+    </g>
+    <!-- petroglyph: spiral/figure on right -->
+    <g stroke="#3a2415" stroke-width="3" fill="none" stroke-linecap="round">
+      <circle cx="74" cy="-30" r="8"/>
+      <line x1="74" y1="-22" x2="74" y2="6"/>
+      <line x1="74" y1="-14" x2="60" y2="-4"/>
+      <line x1="74" y1="-14" x2="88" y2="-4"/>
+      <line x1="74" y1="6" x2="64" y2="24"/>
+      <line x1="74" y1="6" x2="84" y2="24"/>
+    </g>
+  </g>
+
+  <!-- boulder 3 (right) -->
+  <g transform="translate(1010,640)">
+    <path d="M-70,44 Q-82,-26 -34,-52 Q24,-72 70,-40 Q90,-14 78,44 Z" fill="url(#ttRock)"/>
+    <g stroke="#3a2415" stroke-width="3" fill="none" stroke-linecap="round">
+      <path d="M-30,-6 L-30,-30 L8,-30 L8,-6"/>
+      <line x1="-30" y1="-6" x2="-36" y2="14"/>
+      <line x1="8" y1="-6" x2="14" y2="14"/>
+      <path d="M8,-30 L24,-40"/>
+    </g>
+  </g>
+
+  <!-- small reeds at water edge -->
+  <g stroke="#3f5234" stroke-width="2" opacity="0.7">
+    <path d="M380,628 l0,-22 M386,628 l5,-22 M374,628 l-4,-22"/>
+    <path d="M870,664 l0,-20 M876,664 l5,-20 M864,664 l-4,-20"/>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="712" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Tamgaly-Tas</text>
+</svg>

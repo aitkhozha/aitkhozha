@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Almaty mountains">
+  <defs>
+    <linearGradient id="heroSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b1438"/>
+      <stop offset="0.42" stop-color="#5a3a5e"/>
+      <stop offset="0.72" stop-color="#c2683f"/>
+      <stop offset="1" stop-color="#f7b25a"/>
+    </linearGradient>
+    <radialGradient id="heroSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d6"/>
+      <stop offset="0.35" stop-color="#ffd27a"/>
+      <stop offset="0.7" stop-color="#f59e0b" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="heroRidge1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7d6a86"/>
+      <stop offset="1" stop-color="#5e5172"/>
+    </linearGradient>
+    <linearGradient id="heroRidge2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#42425f"/>
+      <stop offset="1" stop-color="#2c2b46"/>
+    </linearGradient>
+    <linearGradient id="heroRidge3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d2238"/>
+      <stop offset="1" stop-color="#111a2e"/>
+    </linearGradient>
+    <linearGradient id="heroFore" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1526"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="heroHaze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f7b25a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e08a4a" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#heroSky)"/>
+
+  <!-- sun glow -->
+  <circle cx="838" cy="262" r="320" fill="url(#heroSun)"/>
+  <circle cx="838" cy="262" r="58" fill="#fff1cf"/>
+  <circle cx="838" cy="262" r="58" fill="#ffd27a" opacity="0.5"/>
+
+  <!-- distant snow peaks -->
+  <polygon points="0,360 120,250 210,300 330,205 430,288 560,180 690,300 800,236 940,318 1060,250 1200,330 1200,520 0,520" fill="url(#heroRidge1)" opacity="0.9"/>
+  <!-- snow caps on far peaks -->
+  <polygon points="560,180 595,238 528,228" fill="#eef2f9" opacity="0.7"/>
+  <polygon points="330,205 366,262 300,252" fill="#eef2f9" opacity="0.7"/>
+  <polygon points="838,222 808,268 870,268" fill="#eef2f9" opacity="0.6"/>
+
+  <!-- atmospheric haze band -->
+  <rect x="0" y="320" width="1200" height="150" fill="url(#heroHaze)" opacity="0.55"/>
+
+  <!-- mid ridge -->
+  <polygon points="0,420 150,360 280,410 420,330 560,415 700,348 860,430 1000,370 1130,432 1200,398 1200,560 0,560" fill="url(#heroRidge2)"/>
+  <polygon points="420,330 470,402 372,398" fill="#cdd6e6" opacity="0.4"/>
+  <polygon points="700,348 745,416 660,412" fill="#cdd6e6" opacity="0.35"/>
+
+  <!-- near ridge with serpentine road -->
+  <polygon points="0,750 0,540 130,500 240,560 360,470 470,540 560,470 660,560 760,500 880,575 1010,505 1130,580 1200,535 1200,750" fill="url(#heroRidge3)"/>
+
+  <!-- amber rim light on near ridge crest -->
+  <path d="M0,540 130,500 240,560 360,470 470,540 560,470 660,560 760,500 880,575 1010,505 1130,580 1200,535" fill="none" stroke="#f59e0b" stroke-width="2.5" opacity="0.5"/>
+
+  <!-- foreground hill -->
+  <polygon points="0,750 0,600 200,560 420,610 640,555 840,620 1040,575 1200,615 1200,750" fill="url(#heroFore)"/>
+
+  <!-- serpentine road climbing the near ridge -->
+  <path d="M250,750 C330,690 250,640 360,610 C470,582 380,540 480,520 C570,503 520,470 590,452" fill="none" stroke="#27324a" stroke-width="34" stroke-linecap="round" opacity="0.85"/>
+  <path d="M250,750 C330,690 250,640 360,610 C470,582 380,540 480,520 C570,503 520,470 590,452" fill="none" stroke="#f5b860" stroke-width="2" stroke-dasharray="10 16" stroke-linecap="round" opacity="0.55"/>
+
+  <!-- pine trees on foreground -->
+  <g fill="#0a1322">
+    <polygon points="120,612 138,560 156,612"/>
+    <polygon points="124,596 138,556 152,596"/>
+    <polygon points="700,628 716,582 732,628"/>
+    <polygon points="704,612 716,578 728,612"/>
+    <polygon points="1080,600 1096,556 1112,600"/>
+  </g>
+
+  <!-- rugged 4x4 SUV silhouette on the road bend -->
+  <g transform="translate(430,505)">
+    <!-- shadow -->
+    <ellipse cx="0" cy="36" rx="74" ry="10" fill="#000000" opacity="0.32"/>
+    <!-- body -->
+    <path d="M-68,18 L-68,-2 Q-66,-12 -54,-14 L-40,-30 Q-36,-36 -26,-36 L34,-36 Q44,-36 50,-28 L60,-14 Q68,-12 68,0 L68,18 Q68,24 60,24 L-60,24 Q-68,24 -68,18 Z" fill="#16213a"/>
+    <!-- roof rack -->
+    <rect x="-30" y="-42" width="56" height="5" rx="2" fill="#0e1526"/>
+    <rect x="-30" y="-46" width="6" height="6" fill="#0e1526"/>
+    <rect x="20" y="-46" width="6" height="6" fill="#0e1526"/>
+    <!-- windows lit by dawn -->
+    <path d="M-36,-28 L-26,-30 L-26,-15 L-40,-15 Q-40,-22 -36,-28 Z" fill="#ffd27a" opacity="0.9"/>
+    <rect x="-20" y="-30" width="22" height="15" fill="#ffd27a" opacity="0.85"/>
+    <rect x="8" y="-30" width="24" height="15" fill="#ffd27a" opacity="0.8"/>
+    <path d="M38,-30 L48,-26 L52,-15 L38,-15 Z" fill="#ffd27a" opacity="0.7"/>
+    <!-- headlight glow -->
+    <circle cx="66" cy="6" r="5" fill="#fff1cf"/>
+    <circle cx="66" cy="6" r="14" fill="#fff1cf" opacity="0.3"/>
+    <!-- tail light -->
+    <rect x="-70" y="2" width="4" height="9" rx="1.5" fill="#ff5a4d"/>
+    <!-- wheels -->
+    <circle cx="-44" cy="24" r="18" fill="#0a1322"/>
+    <circle cx="-44" cy="24" r="8" fill="#33415b"/>
+    <circle cx="-44" cy="24" r="3" fill="#9fb0cc"/>
+    <circle cx="44" cy="24" r="18" fill="#0a1322"/>
+    <circle cx="44" cy="24" r="8" fill="#33415b"/>
+    <circle cx="44" cy="24" r="3" fill="#9fb0cc"/>
+  </g>
+
+  <!-- soaring bird specks -->
+  <path d="M250,170 q8,-7 16,0 q8,-7 16,0" fill="none" stroke="#2c2b46" stroke-width="2" opacity="0.6"/>
+  <path d="M310,150 q6,-5 12,0 q6,-5 12,0" fill="none" stroke="#2c2b46" stroke-width="2" opacity="0.5"/>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="704" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Almaty mountains</text>
+</svg>
