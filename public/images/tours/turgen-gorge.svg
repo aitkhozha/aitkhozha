@@ -1,22 +1,120 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Turgen Gorge">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0f766e"/><stop offset="1" stop-color="#5eead4"/>
+    <linearGradient id="tgSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a5a7a"/>
+      <stop offset="0.6" stop-color="#74a8b8"/>
+      <stop offset="1" stop-color="#d6e6e2"/>
+    </linearGradient>
+    <radialGradient id="tgSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff7e0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff7e0" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tgCliffFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d7166"/>
+      <stop offset="1" stop-color="#3e5249"/>
+    </linearGradient>
+    <linearGradient id="tgWallL" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#243a2d"/>
+      <stop offset="1" stop-color="#15281f"/>
+    </linearGradient>
+    <linearGradient id="tgWallR" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0" stop-color="#243a2d"/>
+      <stop offset="1" stop-color="#15281f"/>
+    </linearGradient>
+    <linearGradient id="tgWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eaf6f7"/>
+      <stop offset="1" stop-color="#a9d6dc"/>
+    </linearGradient>
+    <linearGradient id="tgPool" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4aa3b0"/>
+      <stop offset="1" stop-color="#1f6b78"/>
+    </linearGradient>
+    <linearGradient id="tgFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#10261d"/>
+      <stop offset="1" stop-color="#0b1a14"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#sky)"/>
-  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
-  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#134e4a" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#0f766e" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#0c3b38" opacity="1"/>
-  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
-  <g transform="translate(384,688) scale(1.15)">
-    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#1d2b45"/>
-    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#1d2b45"/>
-    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
-    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
-    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+
+  <rect width="1200" height="750" fill="url(#tgSky)"/>
+  <circle cx="600" cy="120" r="200" fill="url(#tgSun)"/>
+
+  <!-- far gorge peak between walls -->
+  <polygon points="380,330 500,150 620,300 720,180 820,330" fill="url(#tgCliffFar)"/>
+  <polygon points="500,150 540,235 458,232" fill="#dfeae4" opacity="0.5"/>
+
+  <!-- LEFT gorge wall with pine cover -->
+  <polygon points="0,0 0,750 360,750 420,560 400,420 440,300 380,180 320,80 200,0" fill="url(#tgWallL)"/>
+  <!-- RIGHT gorge wall -->
+  <polygon points="1200,0 1200,750 840,750 780,560 800,420 760,300 820,180 880,80 1000,0" fill="url(#tgWallR)"/>
+
+  <!-- pine trees clustered on the walls -->
+  <g fill="#0d2a1f">
+    <g transform="translate(70,260)"><polygon points="0,0 18,-66 36,0"/><polygon points="4,-26 18,-74 32,-26"/></g>
+    <g transform="translate(140,360)"><polygon points="0,0 16,-58 32,0"/><polygon points="3,-22 16,-66 29,-22"/></g>
+    <g transform="translate(50,420)"><polygon points="0,0 17,-62 34,0"/><polygon points="3,-24 17,-70 31,-24"/></g>
+    <g transform="translate(210,470)"><polygon points="0,0 15,-54 30,0"/><polygon points="3,-20 15,-60 27,-20"/></g>
+    <g transform="translate(120,540)"><polygon points="0,0 18,-64 36,0"/><polygon points="4,-24 18,-72 32,-24"/></g>
+    <g transform="translate(1080,260)"><polygon points="0,0 18,-66 36,0"/><polygon points="4,-26 18,-74 32,-26"/></g>
+    <g transform="translate(1010,360)"><polygon points="0,0 16,-58 32,0"/><polygon points="3,-22 16,-66 29,-22"/></g>
+    <g transform="translate(1110,440)"><polygon points="0,0 17,-62 34,0"/><polygon points="3,-24 17,-70 31,-24"/></g>
+    <g transform="translate(960,490)"><polygon points="0,0 15,-54 30,0"/><polygon points="3,-20 15,-60 27,-20"/></g>
+    <g transform="translate(1040,560)"><polygon points="0,0 18,-64 36,0"/><polygon points="4,-24 18,-72 32,-24"/></g>
   </g>
-  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Turgen Gorge</text>
-  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+
+  <!-- multi-tier waterfall down the center -->
+  <g>
+    <!-- tier 1 -->
+    <path d="M566,300 L634,300 L640,400 L560,400 Z" fill="url(#tgWater)"/>
+    <!-- ledge 1 -->
+    <rect x="540" y="396" width="120" height="14" rx="6" fill="#1a2e23"/>
+    <!-- tier 2 -->
+    <path d="M556,410 L644,410 L652,510 L548,510 Z" fill="url(#tgWater)"/>
+    <!-- ledge 2 -->
+    <rect x="528" y="506" width="144" height="16" rx="7" fill="#1a2e23"/>
+    <!-- tier 3 -->
+    <path d="M540,522 L660,522 L672,610 L528,610 Z" fill="url(#tgWater)"/>
+  </g>
+  <!-- white falling streaks -->
+  <g stroke="#ffffff" stroke-width="2.5" opacity="0.7" stroke-linecap="round">
+    <line x1="580" y1="306" x2="576" y2="394"/>
+    <line x1="600" y1="306" x2="600" y2="394"/>
+    <line x1="620" y1="306" x2="624" y2="394"/>
+    <line x1="572" y1="416" x2="566" y2="504"/>
+    <line x1="600" y1="416" x2="600" y2="504"/>
+    <line x1="628" y1="416" x2="634" y2="504"/>
+    <line x1="560" y1="528" x2="552" y2="606"/>
+    <line x1="600" y1="528" x2="600" y2="606"/>
+    <line x1="640" y1="528" x2="648" y2="606"/>
+  </g>
+
+  <!-- mist at base of each tier -->
+  <g fill="#ffffff" opacity="0.4">
+    <ellipse cx="600" cy="400" rx="70" ry="14"/>
+    <ellipse cx="600" cy="512" rx="86" ry="16"/>
+    <ellipse cx="600" cy="614" rx="100" ry="20"/>
+  </g>
+  <g fill="#ffffff" opacity="0.18">
+    <ellipse cx="500" cy="430" rx="60" ry="30"/>
+    <ellipse cx="710" cy="450" rx="60" ry="30"/>
+  </g>
+
+  <!-- pool and gorge floor -->
+  <polygon points="0,750 0,640 360,750" fill="url(#tgFloor)"/>
+  <polygon points="1200,750 1200,640 840,750" fill="url(#tgFloor)"/>
+  <ellipse cx="600" cy="650" rx="180" ry="46" fill="url(#tgPool)"/>
+  <ellipse cx="600" cy="640" rx="120" ry="22" fill="#bfe9ee" opacity="0.4"/>
+  <!-- foamy ripples in pool -->
+  <g stroke="#eaf6f7" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M500,668 q40,-7 80,0"/>
+    <path d="M640,672 q40,-7 80,0"/>
+  </g>
+  <!-- foreground boulders -->
+  <g fill="#0e2419">
+    <ellipse cx="420" cy="700" rx="50" ry="24"/>
+    <ellipse cx="800" cy="708" rx="56" ry="26"/>
+    <ellipse cx="610" cy="730" rx="44" ry="18"/>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="712" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Turgen Gorge</text>
 </svg>

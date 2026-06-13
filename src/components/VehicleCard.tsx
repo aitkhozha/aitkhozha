@@ -1,6 +1,7 @@
 import type { Locale } from '@/i18n/locales';
 import type { Dictionary } from '@/i18n';
 import type { Vehicle } from '@/data/vehicles';
+import { UsersIcon, GearIcon } from '@/components/icons';
 
 export default function VehicleCard({
   vehicle,
@@ -22,8 +23,8 @@ export default function VehicleCard({
         <h3>{vehicle.name}</h3>
         <p className="summary">{vehicle.blurb[locale]}</p>
         <div className="specs">
-          <span>👥 {vehicle.seats} {dict.fleet.seats}</span>
-          <span>⚙️ {vehicle.drivetrain}</span>
+          <span><UsersIcon size={16} /> {vehicle.seats} {dict.fleet.seats}</span>
+          <span><GearIcon size={16} /> {vehicle.drivetrain}</span>
         </div>
       </div>
     </article>

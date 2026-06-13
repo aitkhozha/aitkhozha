@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Locale } from '@/i18n/locales';
 import type { Dictionary } from '@/i18n';
 import type { Tour } from '@/data/tours';
+import { ClockIcon, PinIcon, UsersIcon } from '@/components/icons';
 
 export default function TourCard({
   tour,
@@ -34,9 +35,9 @@ export default function TourCard({
         <h3>{tour.name[locale]}</h3>
         <p className="summary">{tour.summary[locale]}</p>
         <div className="meta">
-          <span>⏱ {duration}</span>
-          <span>📍 {tour.distanceKm} {dict.tour.km}</span>
-          <span>👥 {dict.tour.upToGuests.replace('{n}', String(tour.maxGuests))}</span>
+          <span><ClockIcon size={16} /> {duration}</span>
+          <span><PinIcon size={16} /> {tour.distanceKm} {dict.tour.km}</span>
+          <span><UsersIcon size={16} /> {dict.tour.upToGuests.replace('{n}', String(tour.maxGuests))}</span>
         </div>
         <div className="price-row">
           <div className="price">

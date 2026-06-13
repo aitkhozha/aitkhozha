@@ -1,22 +1,137 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Nissan Patrol Y61">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#38bdf8"/>
+    <linearGradient id="npSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13294a"/>
+      <stop offset="0.55" stop-color="#2f6aa3"/>
+      <stop offset="1" stop-color="#a9d2ec"/>
+    </linearGradient>
+    <radialGradient id="npSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d6" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#fff4d6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="npPeak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b9cba"/>
+      <stop offset="1" stop-color="#5e7194"/>
+    </linearGradient>
+    <linearGradient id="npRidge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33415b"/>
+      <stop offset="1" stop-color="#1f2c45"/>
+    </linearGradient>
+    <linearGradient id="npGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16213a"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="npBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9aa4b2"/>
+      <stop offset="0.5" stop-color="#5f6b7c"/>
+      <stop offset="1" stop-color="#3b4452"/>
+    </linearGradient>
+    <linearGradient id="npGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff0ff"/>
+      <stop offset="1" stop-color="#8fb6d6"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#sky)"/>
-  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
-  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#1e293b" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#475569" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#0f172a" opacity="1"/>
-  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
-  <g transform="translate(384,688) scale(1.15)">
-    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#1f2937"/>
-    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#1f2937"/>
-    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
-    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
-    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+
+  <rect width="1200" height="750" fill="url(#npSky)"/>
+  <circle cx="930" cy="170" r="180" fill="url(#npSun)"/>
+  <circle cx="930" cy="170" r="46" fill="#fff4d6" opacity="0.9"/>
+
+  <!-- far snow peaks -->
+  <polygon points="0,330 160,200 320,310 500,180 680,310 860,190 1040,310 1200,230 1200,420 0,420" fill="url(#npPeak)"/>
+  <g fill="#eef2f9" opacity="0.9">
+    <polygon points="500,180 540,258 460,256"/>
+    <polygon points="860,190 900,262 820,260"/>
+    <polygon points="160,200 198,270 122,268"/>
   </g>
-  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Nissan Patrol Y61</text>
-  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+
+  <!-- near ridge -->
+  <polygon points="0,470 220,410 460,470 700,415 940,472 1160,420 1200,450 1200,540 0,540" fill="url(#npRidge)"/>
+
+  <!-- mountain road -->
+  <polygon points="0,750 0,560 1200,520 1200,750" fill="url(#npGround)"/>
+  <rect x="0" y="556" width="1200" height="10" fill="#2a3650" opacity="0.6"/>
+  <path d="M0,640 L1200,610" stroke="#f59e0b" stroke-width="3" stroke-dasharray="26 22" opacity="0.4"/>
+
+  <!-- ===== NISSAN PATROL Y61: tall, very boxy, upright classic ===== -->
+  <g transform="translate(600,560)">
+    <!-- shadow -->
+    <ellipse cx="0" cy="36" rx="232" ry="20" fill="#000" opacity="0.3"/>
+
+    <!-- body: tall slab sides, near-vertical pillars, flat roof -->
+    <path d="M-218,28 L-218,-40 L-210,-58 L-150,-118 L150,-118 L210,-58 L218,-40 L218,28 Z" fill="url(#npBody)"/>
+    <!-- lower cladding / running board -->
+    <rect x="-218" y="8" width="436" height="22" rx="3" fill="#2c333d"/>
+    <!-- waistline trim -->
+    <rect x="-216" y="-44" width="432" height="5" fill="#2c333d" opacity="0.7"/>
+
+    <!-- flat roof rails -->
+    <rect x="-150" y="-126" width="300" height="8" rx="3" fill="#2c333d"/>
+    <rect x="-150" y="-132" width="8" height="8" fill="#2c333d"/>
+    <rect x="142" y="-132" width="8" height="8" fill="#2c333d"/>
+
+    <!-- large square greenhouse with thick pillars -->
+    <path d="M-142,-110 L-130,-58 L130,-58 L142,-110 Z" fill="#1c2433"/>
+    <!-- windows split by pillars -->
+    <polygon points="-128,-104 -78,-104 -78,-62 -120,-62" fill="url(#npGlass)" opacity="0.9"/>
+    <rect x="-70" y="-104" width="58" height="42" fill="url(#npGlass)" opacity="0.9"/>
+    <rect x="-4" y="-104" width="58" height="42" fill="url(#npGlass)" opacity="0.85"/>
+    <polygon points="62,-104 126,-104 120,-62 62,-62" fill="url(#npGlass)" opacity="0.85"/>
+
+    <!-- doors split lines -->
+    <g stroke="#2c333d" stroke-width="2" opacity="0.7">
+      <line x1="-78" y1="-58" x2="-78" y2="8"/>
+      <line x1="-8" y1="-58" x2="-8" y2="8"/>
+      <line x1="58" y1="-58" x2="58" y2="8"/>
+    </g>
+    <!-- door handles -->
+    <g fill="#2c333d">
+      <rect x="-40" y="-36" width="18" height="5" rx="2"/>
+      <rect x="26" y="-36" width="18" height="5" rx="2"/>
+      <rect x="92" y="-36" width="18" height="5" rx="2"/>
+    </g>
+
+    <!-- front grille and bumper (right) -->
+    <rect x="206" y="-44" width="12" height="50" rx="2" fill="#2c333d"/>
+    <rect x="200" y="-6" width="22" height="20" rx="3" fill="#22272f"/>
+    <!-- round headlight -->
+    <circle cx="208" cy="-22" r="9" fill="#fff1cf"/>
+    <circle cx="208" cy="-22" r="14" fill="#fff1cf" opacity="0.25"/>
+    <!-- rear taillight + spare wheel hint (left, rear-mounted) -->
+    <rect x="-220" y="-30" width="6" height="16" rx="2" fill="#ff5a4d"/>
+    <circle cx="-210" cy="-10" r="20" fill="#2c333d"/>
+    <circle cx="-210" cy="-10" r="13" fill="#1a1f27"/>
+
+    <!-- wheel arches (boxy squared) -->
+    <path d="M-178,30 Q-178,-12 -136,-12 Q-94,-12 -94,30 Z" fill="#0b1120"/>
+    <path d="M94,30 Q94,-12 136,-12 Q178,-12 178,30 Z" fill="#0b1120"/>
+
+    <!-- big all-terrain wheels with rims -->
+    <g>
+      <circle cx="-136" cy="30" r="44" fill="#11161f"/>
+      <circle cx="-136" cy="30" r="44" fill="none" stroke="#2c333d" stroke-width="6"/>
+      <circle cx="-136" cy="30" r="22" fill="#7a8595"/>
+      <circle cx="-136" cy="30" r="9" fill="#3b4452"/>
+      <g stroke="#3b4452" stroke-width="4">
+        <line x1="-136" y1="14" x2="-136" y2="46"/>
+        <line x1="-152" y1="30" x2="-120" y2="30"/>
+        <line x1="-148" y1="18" x2="-124" y2="42"/>
+        <line x1="-148" y1="42" x2="-124" y2="18"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="136" cy="30" r="44" fill="#11161f"/>
+      <circle cx="136" cy="30" r="44" fill="none" stroke="#2c333d" stroke-width="6"/>
+      <circle cx="136" cy="30" r="22" fill="#7a8595"/>
+      <circle cx="136" cy="30" r="9" fill="#3b4452"/>
+      <g stroke="#3b4452" stroke-width="4">
+        <line x1="136" y1="14" x2="136" y2="46"/>
+        <line x1="120" y1="30" x2="152" y2="30"/>
+        <line x1="124" y1="18" x2="148" y2="42"/>
+        <line x1="124" y1="42" x2="148" y2="18"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="712" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Nissan Patrol Y61</text>
 </svg>

@@ -1,22 +1,140 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Land Cruiser Prado 150">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Toyota Land Cruiser Prado 150">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#38bdf8"/>
+    <linearGradient id="tpSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f5fa0"/>
+      <stop offset="0.55" stop-color="#5aa0d6"/>
+      <stop offset="1" stop-color="#d4ecf8"/>
+    </linearGradient>
+    <radialGradient id="tpSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="tpPeak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9fb0cc"/>
+      <stop offset="1" stop-color="#6f86a8"/>
+    </linearGradient>
+    <linearGradient id="tpRidge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a4a66"/>
+      <stop offset="1" stop-color="#243350"/>
+    </linearGradient>
+    <linearGradient id="tpGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16213a"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="tpBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#e7ecf3"/>
+      <stop offset="1" stop-color="#c2cad8"/>
+    </linearGradient>
+    <linearGradient id="tpGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dff0ff"/>
+      <stop offset="1" stop-color="#7ea9cc"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#sky)"/>
-  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
-  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#1e293b" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#475569" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#0f172a" opacity="1"/>
-  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
-  <g transform="translate(384,688) scale(1.15)">
-    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#374151"/>
-    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#374151"/>
-    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
-    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
-    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+
+  <rect width="1200" height="750" fill="url(#tpSky)"/>
+  <circle cx="300" cy="150" r="170" fill="url(#tpSun)"/>
+
+  <!-- clouds -->
+  <g fill="#ffffff" opacity="0.6">
+    <ellipse cx="720" cy="120" rx="100" ry="22"/>
+    <ellipse cx="800" cy="108" rx="64" ry="18"/>
+    <ellipse cx="1010" cy="170" rx="90" ry="20"/>
   </g>
-  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Land Cruiser Prado 150</text>
-  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+
+  <!-- far snow peaks -->
+  <polygon points="0,340 170,210 340,320 520,190 700,320 880,200 1060,320 1200,240 1200,420 0,420" fill="url(#tpPeak)"/>
+  <g fill="#eef2f9" opacity="0.92">
+    <polygon points="520,190 562,268 478,266"/>
+    <polygon points="880,200 920,272 840,270"/>
+  </g>
+
+  <!-- near ridge -->
+  <polygon points="0,470 240,415 480,470 720,418 960,472 1180,425 1200,452 1200,540 0,540" fill="url(#tpRidge)"/>
+
+  <!-- road -->
+  <polygon points="0,750 0,560 1200,520 1200,750" fill="url(#tpGround)"/>
+  <rect x="0" y="556" width="1200" height="10" fill="#2a3650" opacity="0.6"/>
+  <path d="M0,640 L1200,610" stroke="#f59e0b" stroke-width="3" stroke-dasharray="26 22" opacity="0.4"/>
+
+  <!-- ===== TOYOTA PRADO 150: large modern boxy SUV, pearl white, slightly lower roof, stepped hood ===== -->
+  <g transform="translate(600,560)">
+    <ellipse cx="0" cy="36" rx="236" ry="20" fill="#000" opacity="0.3"/>
+
+    <!-- body: boxy but with shoulder line and squared but softer arches -->
+    <path d="M-222,28 L-222,-30 L-214,-46 L-150,-104 L120,-104 L186,-58 L222,-44 L222,28 Z" fill="url(#tpBody)"/>
+    <!-- shoulder shading -->
+    <path d="M-222,-30 L222,-44 L222,-30 L-222,-16 Z" fill="#cdd6e6" opacity="0.5"/>
+    <!-- lower body cladding (black) -->
+    <rect x="-222" y="6" width="444" height="24" rx="3" fill="#1d232c"/>
+    <!-- side body trim line -->
+    <rect x="-216" y="-34" width="416" height="4" fill="#cdd6e6" opacity="0.7"/>
+
+    <!-- roof rails -->
+    <rect x="-148" y="-112" width="262" height="8" rx="3" fill="#2c333d"/>
+    <rect x="-148" y="-118" width="8" height="8" fill="#2c333d"/>
+    <rect x="106" y="-118" width="8" height="8" fill="#2c333d"/>
+
+    <!-- greenhouse -->
+    <path d="M-142,-100 L-128,-50 L116,-50 L106,-100 Z" fill="#161d29"/>
+    <polygon points="-126,-94 -76,-94 -76,-54 -118,-54" fill="url(#tpGlass)" opacity="0.92"/>
+    <rect x="-68" y="-94" width="56" height="40" fill="url(#tpGlass)" opacity="0.9"/>
+    <rect x="-4" y="-94" width="56" height="40" fill="url(#tpGlass)" opacity="0.85"/>
+    <polygon points="60,-94 104,-94 96,-54 60,-54" fill="url(#tpGlass)" opacity="0.85"/>
+
+    <!-- door lines -->
+    <g stroke="#b3bccb" stroke-width="2" opacity="0.8">
+      <line x1="-76" y1="-50" x2="-76" y2="6"/>
+      <line x1="-6" y1="-50" x2="-6" y2="6"/>
+      <line x1="56" y1="-50" x2="56" y2="6"/>
+    </g>
+    <g fill="#9aa6b6">
+      <rect x="-44" y="-28" width="18" height="5" rx="2"/>
+      <rect x="22" y="-28" width="18" height="5" rx="2"/>
+      <rect x="80" y="-28" width="18" height="5" rx="2"/>
+    </g>
+
+    <!-- front: stepped hood, modern slim headlight -->
+    <path d="M186,-58 L222,-44 L222,-30 L188,-30 Z" fill="#dfe5ee"/>
+    <rect x="200" y="-44" width="22" height="9" rx="3" fill="#1d232c"/>
+    <polygon points="222,-22 198,-22 200,-8 222,-8" fill="#22272f"/>
+    <!-- modern headlight cluster -->
+    <polygon points="200,-30 222,-30 222,-20 204,-20" fill="#fff7df"/>
+    <circle cx="216" cy="-25" r="4" fill="#9fd8ff"/>
+    <!-- rear taillight -->
+    <rect x="-224" y="-22" width="6" height="20" rx="2" fill="#ff5a4d"/>
+
+    <!-- wheel arches -->
+    <path d="M-182,30 Q-182,-14 -138,-14 Q-94,-14 -94,30 Z" fill="#0b1120"/>
+    <path d="M94,30 Q94,-14 138,-14 Q182,-14 182,30 Z" fill="#0b1120"/>
+
+    <!-- alloy wheels (multi-spoke) -->
+    <g>
+      <circle cx="-138" cy="30" r="44" fill="#11161f"/>
+      <circle cx="-138" cy="30" r="44" fill="none" stroke="#3a4456" stroke-width="6"/>
+      <circle cx="-138" cy="30" r="22" fill="#c2cad8"/>
+      <circle cx="-138" cy="30" r="8" fill="#4a5566"/>
+      <g stroke="#4a5566" stroke-width="3.5">
+        <line x1="-138" y1="10" x2="-138" y2="50"/>
+        <line x1="-158" y1="30" x2="-118" y2="30"/>
+        <line x1="-152" y1="16" x2="-124" y2="44"/>
+        <line x1="-152" y1="44" x2="-124" y2="16"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="138" cy="30" r="44" fill="#11161f"/>
+      <circle cx="138" cy="30" r="44" fill="none" stroke="#3a4456" stroke-width="6"/>
+      <circle cx="138" cy="30" r="22" fill="#c2cad8"/>
+      <circle cx="138" cy="30" r="8" fill="#4a5566"/>
+      <g stroke="#4a5566" stroke-width="3.5">
+        <line x1="138" y1="10" x2="138" y2="50"/>
+        <line x1="118" y1="30" x2="158" y2="30"/>
+        <line x1="124" y1="16" x2="152" y2="44"/>
+        <line x1="124" y1="44" x2="152" y2="16"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="712" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Toyota Land Cruiser Prado 150</text>
 </svg>

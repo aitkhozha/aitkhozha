@@ -5,6 +5,7 @@ import { locales, isLocale, type Locale } from '@/i18n/locales';
 import { getDictionary } from '@/i18n';
 import { tours, getTour } from '@/data/tours';
 import { priceInLocale } from '@/lib/currency';
+import { ArrowLeftIcon, ClockIcon, PinIcon, UsersIcon, MountainIcon } from '@/components/icons';
 
 export function generateStaticParams() {
   return locales.flatMap((locale) => tours.map((t) => ({ locale, slug: t.slug })));
@@ -31,8 +32,8 @@ export default async function TourPage({ params }: { params: { locale: string; s
   return (
     <section className="block">
       <div className="container">
-        <Link href={`/${locale}#tours` as never} className="note" style={{ display: 'inline-block', marginBottom: 18 }}>
-          {dict.tour.backToTours}
+        <Link href={`/${locale}#tours` as never} className="note back-link" style={{ marginBottom: 18 }}>
+          <ArrowLeftIcon size={16} /> {dict.tour.backToTours}
         </Link>
 
         <div className="detail-hero">
@@ -56,19 +57,19 @@ export default async function TourPage({ params }: { params: { locale: string; s
             <div className="detail-stats">
               <div className="stat">
                 <div className="k">{dict.tour.duration}</div>
-                <div className="v">⏱ {duration}</div>
+                <div className="v with-icon"><ClockIcon size={18} /> {duration}</div>
               </div>
               <div className="stat">
                 <div className="k">{dict.tour.distance}</div>
-                <div className="v">📍 {tour.distanceKm} {dict.tour.km}</div>
+                <div className="v with-icon"><PinIcon size={18} /> {tour.distanceKm} {dict.tour.km}</div>
               </div>
               <div className="stat">
-                <div className="k">👥</div>
-                <div className="v">{dict.tour.upToGuests.replace('{n}', String(tour.maxGuests))}</div>
+                <div className="k">{dict.booking.guests}</div>
+                <div className="v with-icon"><UsersIcon size={18} /> {dict.tour.upToGuests.replace('{n}', String(tour.maxGuests))}</div>
               </div>
               <div className="stat">
                 <div className="k">{dict.tour.difficulty}</div>
-                <div className="v">⛰ {dict.tour.difficultyLevels[tour.difficulty]}</div>
+                <div className="v with-icon"><MountainIcon size={18} /> {dict.tour.difficultyLevels[tour.difficulty]}</div>
               </div>
             </div>
 

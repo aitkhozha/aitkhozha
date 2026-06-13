@@ -1,22 +1,134 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Honda Pilot">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1e3a8a"/><stop offset="1" stop-color="#38bdf8"/>
+    <linearGradient id="hpSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#243a6e"/>
+      <stop offset="0.5" stop-color="#9a6a86"/>
+      <stop offset="1" stop-color="#f2c07a"/>
+    </linearGradient>
+    <radialGradient id="hpSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff1cf"/>
+      <stop offset="0.45" stop-color="#ffd27a" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hpPeak" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a86a6"/>
+      <stop offset="1" stop-color="#5e5b80"/>
+    </linearGradient>
+    <linearGradient id="hpRidge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#34324f"/>
+      <stop offset="1" stop-color="#20203a"/>
+    </linearGradient>
+    <linearGradient id="hpGround" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#161d33"/>
+      <stop offset="1" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="hpBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3c66b0"/>
+      <stop offset="0.5" stop-color="#234a8a"/>
+      <stop offset="1" stop-color="#152f5e"/>
+    </linearGradient>
+    <linearGradient id="hpGlass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6e8fb"/>
+      <stop offset="1" stop-color="#6f93c0"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#sky)"/>
-  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
-  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#1e293b" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#475569" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#0f172a" opacity="1"/>
-  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
-  <g transform="translate(384,688) scale(1.15)">
-    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#334155"/>
-    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#334155"/>
-    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
-    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
-    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+
+  <rect width="1200" height="750" fill="url(#hpSky)"/>
+  <circle cx="850" cy="200" r="220" fill="url(#hpSun)"/>
+  <circle cx="850" cy="200" r="48" fill="#fff1cf"/>
+
+  <!-- far peaks -->
+  <polygon points="0,340 170,210 340,320 520,190 700,320 880,200 1060,320 1200,240 1200,420 0,420" fill="url(#hpPeak)"/>
+  <g fill="#eef2f9" opacity="0.85">
+    <polygon points="520,190 562,266 478,264"/>
+    <polygon points="880,200 920,270 840,268"/>
   </g>
-  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Honda Pilot</text>
-  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+
+  <!-- near ridge -->
+  <polygon points="0,470 240,418 480,470 720,420 960,472 1180,428 1200,452 1200,540 0,540" fill="url(#hpRidge)"/>
+
+  <!-- road -->
+  <polygon points="0,750 0,560 1200,520 1200,750" fill="url(#hpGround)"/>
+  <rect x="0" y="556" width="1200" height="10" fill="#2a3650" opacity="0.6"/>
+  <path d="M0,640 L1200,610" stroke="#f59e0b" stroke-width="3" stroke-dasharray="26 22" opacity="0.45"/>
+
+  <!-- ===== HONDA PILOT: long, lower, sleeker 3-row crossover, deep blue ===== -->
+  <g transform="translate(600,560)">
+    <ellipse cx="0" cy="36" rx="250" ry="20" fill="#000" opacity="0.32"/>
+
+    <!-- long body, gently curved roofline, raked windscreen, longer rear overhang (3 rows) -->
+    <path d="M-238,28 L-238,-22 Q-236,-36 -210,-44 L-150,-86 Q-130,-96 -96,-96 L120,-96 Q150,-96 168,-78 L210,-46 Q238,-40 238,-16 L238,28 Z" fill="url(#hpBody)"/>
+    <!-- highlight crease -->
+    <path d="M-236,-18 Q0,-30 238,-12" fill="none" stroke="#5a86c8" stroke-width="3" opacity="0.6"/>
+    <!-- lower cladding -->
+    <rect x="-238" y="8" width="476" height="22" rx="3" fill="#101a2e"/>
+
+    <!-- roof rails (low profile, flush) -->
+    <rect x="-130" y="-100" width="240" height="6" rx="3" fill="#162338"/>
+
+    <!-- long greenhouse with 3 side windows + quarter glass (3rd row) -->
+    <path d="M-148,-82 L-128,-44 L150,-44 L130,-86 L-96,-86 L-148,-82 Z" fill="#101a2e"/>
+    <!-- windscreen -->
+    <polygon points="-146,-78 -100,-82 -94,-46 -126,-46" fill="url(#hpGlass)" opacity="0.92"/>
+    <!-- front side window -->
+    <rect x="-86" y="-82" width="58" height="36" fill="url(#hpGlass)" opacity="0.9"/>
+    <!-- middle window -->
+    <rect x="-22" y="-82" width="58" height="36" fill="url(#hpGlass)" opacity="0.85"/>
+    <!-- rear (third-row) window -->
+    <rect x="42" y="-82" width="50" height="36" fill="url(#hpGlass)" opacity="0.82"/>
+    <!-- small rear quarter glass -->
+    <polygon points="98,-82 130,-82 146,-46 98,-46" fill="url(#hpGlass)" opacity="0.78"/>
+
+    <!-- door lines (longer cabin) -->
+    <g stroke="#152f5e" stroke-width="2" opacity="0.8">
+      <line x1="-86" y1="-44" x2="-86" y2="8"/>
+      <line x1="-24" y1="-44" x2="-24" y2="8"/>
+      <line x1="40" y1="-44" x2="40" y2="8"/>
+      <line x1="96" y1="-44" x2="96" y2="8"/>
+    </g>
+    <g fill="#1a3463">
+      <rect x="-52" y="-26" width="18" height="5" rx="2"/>
+      <rect x="6" y="-26" width="18" height="5" rx="2"/>
+      <rect x="64" y="-26" width="18" height="5" rx="2"/>
+    </g>
+
+    <!-- front: sloped nose, slim headlight -->
+    <polygon points="210,-46 238,-16 238,-4 214,-4 206,-28" fill="#1a3463"/>
+    <polygon points="220,-22 238,-22 238,-12 224,-12" fill="#fff7df"/>
+    <!-- chrome bar hint -->
+    <rect x="212" y="-32" width="24" height="4" rx="2" fill="#9fb0cc" opacity="0.7"/>
+    <!-- wraparound taillight -->
+    <path d="M-238,-18 L-230,-18 L-230,2 L-238,2 Z" fill="#ff5a4d"/>
+
+    <!-- wheel arches (rounded crossover style) -->
+    <path d="M-188,30 A46,46 0 0 1 -96,30 Z" fill="#0b1120"/>
+    <path d="M96,30 A46,46 0 0 1 188,30 Z" fill="#0b1120"/>
+
+    <!-- alloy wheels (five-spoke) -->
+    <g>
+      <circle cx="-142" cy="30" r="42" fill="#11161f"/>
+      <circle cx="-142" cy="30" r="42" fill="none" stroke="#2c3a55" stroke-width="6"/>
+      <circle cx="-142" cy="30" r="20" fill="#9fb0cc"/>
+      <circle cx="-142" cy="30" r="7" fill="#3b4452"/>
+      <g stroke="#3b4452" stroke-width="3.5">
+        <line x1="-142" y1="12" x2="-142" y2="48"/>
+        <line x1="-158" y1="22" x2="-126" y2="38"/>
+        <line x1="-158" y1="38" x2="-126" y2="22"/>
+      </g>
+    </g>
+    <g>
+      <circle cx="142" cy="30" r="42" fill="#11161f"/>
+      <circle cx="142" cy="30" r="42" fill="none" stroke="#2c3a55" stroke-width="6"/>
+      <circle cx="142" cy="30" r="20" fill="#9fb0cc"/>
+      <circle cx="142" cy="30" r="7" fill="#3b4452"/>
+      <g stroke="#3b4452" stroke-width="3.5">
+        <line x1="142" y1="12" x2="142" y2="48"/>
+        <line x1="126" y1="22" x2="158" y2="38"/>
+        <line x1="126" y1="38" x2="158" y2="22"/>
+      </g>
+    </g>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="712" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Honda Pilot</text>
 </svg>

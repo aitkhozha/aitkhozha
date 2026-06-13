@@ -81,7 +81,7 @@ const dict: Dictionary = {
       'Sunscreen & sunglasses',
       'ID / passport'
     ],
-    backToTours: '← Back to all tours'
+    backToTours: 'Back to all tours'
   },
   fleet: {
     seats: 'seats',
@@ -121,6 +121,54 @@ const dict: Dictionary = {
     language: 'Language',
     rights: 'All rights reserved.',
     builtWith: 'Jeep tours across the mountains of the Almaty region'
+  },
+  trust: [
+    'Prices 20% below the market',
+    'Experienced driver-guides',
+    '7 languages & currencies',
+    'Free hotel pickup'
+  ],
+  stats: [
+    { value: '−20%', label: 'vs. average market price' },
+    { value: '6', label: 'mountain routes' },
+    { value: '4', label: '4×4 off-roaders' },
+    { value: '7', label: 'languages & currencies' }
+  ],
+  how: {
+    title: 'How it works',
+    subtitle: 'From request to the mountains — four simple steps',
+    steps: [
+      { title: 'Choose a route', text: 'Lakes, canyons or plateaus — pick a tour and a date that suits you.' },
+      { title: 'Send a request', text: 'Fill in a short form in any of the seven languages.' },
+      { title: 'AI processes it', text: 'Our AI structures and translates your request into Russian, and we confirm the details.' },
+      { title: 'Off to the mountains', text: 'Your driver-guide picks you up from the hotel in a dependable 4×4.' }
+    ]
+  },
+  faq: {
+    title: 'Frequently asked questions',
+    subtitle: 'Everything worth knowing before you book',
+    items: [
+      {
+        q: 'Do I need off-road driving experience?',
+        a: 'No. An experienced driver-guide is at the wheel. You simply enjoy the views and take photos.'
+      },
+      {
+        q: "What's included in the price?",
+        a: 'A 4×4 with a driver-guide, fuel and road fees, hotel transfer, drinking water and snacks, and photo stops.'
+      },
+      {
+        q: 'What language is support provided in?',
+        a: 'The website and support are available in seven languages: Russian, Kazakh, English, Korean, Chinese, Malay and Arabic.'
+      },
+      {
+        q: 'How does payment work?',
+        a: 'For now, payment is on booking confirmation. Online payment via internet banking will be added soon.'
+      },
+      {
+        q: 'What happens in bad weather?',
+        a: 'We monitor the forecast and road conditions. Your tour can be rescheduled to another date or route free of charge.'
+      }
+    ]
   }
 };
 

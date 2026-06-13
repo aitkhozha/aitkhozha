@@ -7,6 +7,7 @@ import { tours } from '@/data/tours';
 import { vehicles } from '@/data/vehicles';
 import { siteConfig } from '@/config/site';
 import BookingForm from '@/components/BookingForm';
+import { CardIcon, InstagramIcon, TikTokIcon } from '@/components/icons';
 
 export function generateMetadata({ params }: { params: { locale: string } }): Metadata {
   if (!isLocale(params.locale)) return {};
@@ -39,7 +40,7 @@ export default function BookingPage({ params }: { params: { locale: string } }) 
 
           <aside style={{ display: 'grid', gap: 16 }}>
             <div className="aside-card">
-              <h3 style={{ marginTop: 0 }}>💳 {dict.booking.tour}</h3>
+              <h3 className="with-icon" style={{ marginTop: 0 }}><CardIcon size={20} /> {dict.nav.booking}</h3>
               <p className="note">{dict.booking.paymentNote}</p>
               <p className="note">{dict.currency.note}</p>
             </div>
@@ -54,10 +55,10 @@ export default function BookingPage({ params }: { params: { locale: string } }) 
               </p>
               <div className="social" style={{ marginTop: 10 }}>
                 <a href={siteConfig.social.instagram} target="_blank" rel="noopener noreferrer">
-                  📷 Instagram
+                  <InstagramIcon size={18} /> Instagram
                 </a>
                 <a href={siteConfig.social.tiktok} target="_blank" rel="noopener noreferrer">
-                  🎵 TikTok
+                  <TikTokIcon size={18} /> TikTok
                 </a>
               </div>
             </div>

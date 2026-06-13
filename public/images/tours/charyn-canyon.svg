@@ -1,22 +1,108 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Charyn Canyon">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#b45309"/><stop offset="1" stop-color="#f59e0b"/>
+    <linearGradient id="chSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a6ea5"/>
+      <stop offset="0.5" stop-color="#e6a35b"/>
+      <stop offset="1" stop-color="#f6d29a"/>
+    </linearGradient>
+    <radialGradient id="chSun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fff4d6"/>
+      <stop offset="0.5" stop-color="#ffd27a" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="chWallFar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d98b53"/>
+      <stop offset="1" stop-color="#b9663a"/>
+    </linearGradient>
+    <linearGradient id="chWallMid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c2693a"/>
+      <stop offset="1" stop-color="#8f4322"/>
+    </linearGradient>
+    <linearGradient id="chColumn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e29a5c"/>
+      <stop offset="0.5" stop-color="#c2693a"/>
+      <stop offset="1" stop-color="#823c20"/>
+    </linearGradient>
+    <linearGradient id="chFloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#a3603a"/>
+      <stop offset="1" stop-color="#7c3f22"/>
     </linearGradient>
   </defs>
-  <rect width="1200" height="750" fill="url(#sky)"/>
-  <circle cx="936" cy="180" r="70" fill="#ffe7a8" opacity="0.9"/>
-  <polygon points="0,750 0,355 133,310 267,315 400,338 533,282 667,375 800,259 933,418 1067,247 1200,464 1200,750" fill="#7c2d12" opacity="0.55"/><polygon points="0,750 0,330 133,460 267,350 400,422 533,381 667,391 800,419 933,370 1067,463 1200,361 1200,750" fill="#c2410c" opacity="0.8"/><polygon points="0,750 0,564 133,438 267,519 400,453 533,477 667,478 800,442 933,512 1067,415 1200,553 1200,750" fill="#5b1d0c" opacity="1"/>
-  <rect x="0" y="680" width="1200" height="70" fill="#0b1120" opacity="0.55"/>
-  <g transform="translate(384,688) scale(1.15)">
-    <rect x="-90" y="-34" width="180" height="40" rx="10" fill="#1d2b45"/>
-    <rect x="-58" y="-62" width="120" height="34" rx="9" fill="#1d2b45"/>
-    <rect x="-50" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <rect x="2" y="-56" width="40" height="22" rx="4" fill="#cfe8ff" opacity="0.85"/>
-    <circle cx="-54" cy="10" r="22" fill="#0b1120"/><circle cx="-54" cy="10" r="9" fill="#586079"/>
-    <circle cx="54" cy="10" r="22" fill="#0b1120"/><circle cx="54" cy="10" r="9" fill="#586079"/>
-    <rect x="78" y="-22" width="10" height="12" rx="2" fill="#ffd27a"/>
+
+  <rect width="1200" height="750" fill="url(#chSky)"/>
+  <circle cx="820" cy="160" r="220" fill="url(#chSun)"/>
+  <circle cx="820" cy="160" r="46" fill="#fff4d6"/>
+
+  <!-- far canyon rim -->
+  <polygon points="0,300 160,250 320,290 520,240 720,300 920,250 1120,300 1200,270 1200,420 0,420" fill="url(#chWallFar)" opacity="0.85"/>
+
+  <!-- mid canyon walls (Valley of Castles) -->
+  <polygon points="0,420 0,260 70,250 110,300 150,255 200,320 250,270 300,340 360,290 360,420" fill="url(#chWallMid)"/>
+  <polygon points="1200,420 1200,250 1130,245 1090,300 1045,255 1000,330 950,280 905,350 860,300 860,420" fill="url(#chWallMid)"/>
+
+  <!-- tall rock columns -->
+  <g>
+    <polygon points="120,500 130,330 150,318 168,335 175,500" fill="url(#chColumn)"/>
+    <polygon points="120,500 175,500 168,520 124,520" fill="#6e3219"/>
+    <polygon points="220,520 228,300 246,286 264,302 272,520" fill="url(#chColumn)"/>
+    <polygon points="220,520 272,520 266,542 224,542" fill="#6e3219"/>
+    <polygon points="980,510 988,326 1006,312 1024,328 1032,510" fill="url(#chColumn)"/>
+    <polygon points="980,510 1032,510 1026,532 984,532" fill="#6e3219"/>
+    <polygon points="1080,540 1090,360 1108,348 1124,362 1132,540" fill="url(#chColumn)"/>
   </g>
-  <text x="44" y="640" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#ffffff">Charyn Canyon</text>
-  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#ffffff">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+
+  <!-- carved strata lines on columns -->
+  <g stroke="#6e3219" stroke-width="2" opacity="0.5" fill="none">
+    <path d="M124,400 L172,400"/>
+    <path d="M126,440 L173,440"/>
+    <path d="M224,400 L270,400"/>
+    <path d="M226,450 L271,450"/>
+    <path d="M984,400 L1030,400"/>
+    <path d="M986,450 L1031,450"/>
+  </g>
+
+  <!-- central hoodoo cluster -->
+  <g>
+    <polygon points="540,560 552,330 575,312 600,330 610,560" fill="url(#chColumn)"/>
+    <polygon points="610,560 625,360 645,346 665,362 678,560" fill="url(#chColumn)"/>
+    <polygon points="678,560 690,400 706,388 722,402 730,560" fill="url(#chColumn)"/>
+    <g stroke="#6e3219" stroke-width="2.5" opacity="0.55" fill="none">
+      <path d="M546,420 L606,420"/>
+      <path d="M548,470 L608,470"/>
+      <path d="M626,440 L676,440"/>
+      <path d="M692,460 L728,460"/>
+    </g>
+  </g>
+
+  <!-- canyon floor / track -->
+  <polygon points="0,750 0,520 280,540 540,560 730,560 980,540 1200,560 1200,750" fill="url(#chFloor)"/>
+  <!-- the 4x4 track winding through -->
+  <path d="M120,750 C260,690 320,680 420,660 C540,636 600,628 720,612 C840,596 900,592 1000,580" fill="none" stroke="#5e2e18" stroke-width="26" stroke-linecap="round" opacity="0.7"/>
+  <path d="M120,750 C260,690 320,680 420,660 C540,636 600,628 720,612 C840,596 900,592 1000,580" fill="none" stroke="#e6b483" stroke-width="3" stroke-dasharray="9 14" opacity="0.5"/>
+
+  <!-- small 4x4 on the canyon track -->
+  <g transform="translate(470,648) scale(0.78)">
+    <ellipse cx="0" cy="34" rx="66" ry="8" fill="#3a1c0e" opacity="0.4"/>
+    <path d="M-60,16 L-60,-2 Q-58,-10 -48,-12 L-36,-26 Q-32,-30 -24,-30 L30,-30 Q38,-30 44,-24 L54,-12 Q60,-10 60,0 L60,16 Q60,22 54,22 L-54,22 Q-60,22 -60,16 Z" fill="#16213a"/>
+    <rect x="-26" y="-32" width="48" height="4" rx="2" fill="#0e1526"/>
+    <rect x="-32" y="-25" width="20" height="13" fill="#cfe8ff" opacity="0.85"/>
+    <rect x="-8" y="-25" width="22" height="13" fill="#cfe8ff" opacity="0.8"/>
+    <rect x="20" y="-25" width="18" height="13" fill="#cfe8ff" opacity="0.7"/>
+    <circle cx="58" cy="4" r="4" fill="#fff1cf"/>
+    <circle cx="-38" cy="22" r="16" fill="#0a1322"/>
+    <circle cx="-38" cy="22" r="7" fill="#33415b"/>
+    <circle cx="40" cy="22" r="16" fill="#0a1322"/>
+    <circle cx="40" cy="22" r="7" fill="#33415b"/>
+  </g>
+
+  <!-- dry shrubs -->
+  <g fill="#7a5a2e" opacity="0.8">
+    <circle cx="200" cy="600" r="8"/>
+    <circle cx="215" cy="605" r="6"/>
+    <circle cx="930" cy="610" r="9"/>
+    <circle cx="948" cy="615" r="6"/>
+  </g>
+
+  <text x="46" y="56" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800" fill="#eef2f9">JEEP<tspan fill="#f59e0b">.ALATAU</tspan></text>
+  <text x="44" y="710" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="800" fill="#eef2f9">Charyn Canyon</text>
 </svg>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import type { Locale } from '@/i18n/locales';
 import type { Dictionary } from '@/i18n';
+import { CpuIcon } from '@/components/icons';
 
 type Option = { slug: string; label: string };
 
@@ -120,8 +121,8 @@ export default function BookingForm({
         <button type="submit" className="btn btn-primary btn-block" disabled={status === 'sending'}>
           {status === 'sending' ? dict.booking.submitting : dict.booking.submit}
         </button>
-        <p className="note" style={{ marginTop: 10 }}>
-          🤖 {dict.booking.aiNote}
+        <p className="note with-icon" style={{ marginTop: 10 }}>
+          <CpuIcon size={16} /> {dict.booking.aiNote}
         </p>
       </div>
     </form>

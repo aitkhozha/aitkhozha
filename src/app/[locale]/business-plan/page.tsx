@@ -13,6 +13,7 @@ import {
   type YearModel
 } from '@/data/businessPlan';
 import { BarChart, LineChart, PieChart, ColumnChart, Legend, CHART_COLORS } from '@/components/charts';
+import { CarIcon, GlobeIcon, CpuIcon, TagIcon, DownloadIcon } from '@/components/icons';
 
 export const metadata: Metadata = {
   title: 'Бизнес-план',
@@ -73,10 +74,10 @@ export default function BusinessPlanPage({ params }: { params: { locale: string 
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', margin: '18px 0' }}>
           <a className="btn btn-primary" href="/downloads/jeep-alatau-financial-model.xlsx" download>
-            ⬇ Скачать финансовую модель (Excel)
+            <DownloadIcon size={18} /> Скачать финансовую модель (Excel)
           </a>
           <a className="btn btn-ghost" href="/downloads/jeep-alatau-business-plan.md" download>
-            ⬇ Текст бизнес-плана (Markdown)
+            <DownloadIcon size={18} /> Текст бизнес-плана (Markdown)
           </a>
         </div>
 
@@ -166,10 +167,10 @@ export default function BusinessPlanPage({ params }: { params: { locale: string 
         <div className="bp-section" id="advantages">
           <h2>4. Конкурентные преимущества</h2>
           <div className="features">
-            <div className="feature"><div className="ico">🚙</div><h3>Надёжный автопарк</h3><p>Nissan Patrol Y61, Land Cruiser Prado 150, Honda Pilot, Hyundai Santa Fe.</p></div>
-            <div className="feature"><div className="ico">🌍</div><h3>7 языков и валют</h3><p>Сайт и поддержка на 7 языках с автоконвертацией цен.</p></div>
-            <div className="feature"><div className="ico">🤖</div><h3>ИИ-автоматизация</h3><p>Обработка, перевод заявок и бронирование с помощью ИИ.</p></div>
-            <div className="feature"><div className="ico">💰</div><h3>Цена ниже на 20%</h3><p>Прозрачные тарифы ниже среднерыночных без потери маржи.</p></div>
+            <div className="feature"><div className="ico"><CarIcon size={24} /></div><h3>Надёжный автопарк</h3><p>Nissan Patrol Y61, Land Cruiser Prado 150, Honda Pilot, Hyundai Santa Fe.</p></div>
+            <div className="feature"><div className="ico"><GlobeIcon size={24} /></div><h3>7 языков и валют</h3><p>Сайт и поддержка на 7 языках с автоконвертацией цен.</p></div>
+            <div className="feature"><div className="ico"><CpuIcon size={24} /></div><h3>ИИ-автоматизация</h3><p>Обработка, перевод заявок и бронирование с помощью ИИ.</p></div>
+            <div className="feature"><div className="ico"><TagIcon size={24} /></div><h3>Цена ниже на 20%</h3><p>Прозрачные тарифы ниже среднерыночных без потери маржи.</p></div>
           </div>
         </div>
 
@@ -317,7 +318,7 @@ export default function BusinessPlanPage({ params }: { params: { locale: string 
           <div className="grid grid-2">
             {aiAutomation.map(([title, text]) => (
               <div className="aside-card" key={title}>
-                <h3 style={{ marginTop: 0 }}>🤖 {title}</h3>
+                <h3 className="with-icon" style={{ marginTop: 0 }}><CpuIcon size={20} /> {title}</h3>
                 <p className="note">{text}</p>
               </div>
             ))}

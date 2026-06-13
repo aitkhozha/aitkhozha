@@ -81,7 +81,7 @@ const dict: Dictionary = {
       'Pelindung matahari & cermin mata hitam',
       'Kad pengenalan / pasport'
     ],
-    backToTours: '← Kembali ke semua pakej'
+    backToTours: 'Kembali ke semua pakej'
   },
   fleet: {
     seats: 'tempat duduk',
@@ -121,6 +121,54 @@ const dict: Dictionary = {
     language: 'Bahasa',
     rights: 'Hak cipta terpelihara.',
     builtWith: 'Pelancongan jip merentasi pergunungan wilayah Almaty'
+  },
+  trust: [
+    'Harga 20% lebih rendah daripada pasaran',
+    'Pemandu-panduan berpengalaman',
+    '7 bahasa & mata wang',
+    'Ambil dari hotel percuma'
+  ],
+  stats: [
+    { value: '−20%', label: 'berbanding purata harga pasaran' },
+    { value: '6', label: 'laluan pergunungan' },
+    { value: '4', label: 'kenderaan 4×4' },
+    { value: '7', label: 'bahasa & mata wang' }
+  ],
+  how: {
+    title: 'Cara ia berfungsi',
+    subtitle: 'Dari permohonan ke pergunungan — empat langkah mudah',
+    steps: [
+      { title: 'Pilih laluan', text: 'Tasik, ngarai atau dataran tinggi — pilih pakej dan tarikh yang sesuai.' },
+      { title: 'Hantar permohonan', text: 'Isi borang ringkas dalam mana-mana daripada tujuh bahasa.' },
+      { title: 'AI memprosesnya', text: 'AI menstruktur dan menterjemah permohonan anda ke bahasa Rusia, dan kami sahkan butirannya.' },
+      { title: 'Berangkat ke gunung', text: 'Pemandu-panduan menjemput anda dari hotel dengan 4×4 yang boleh dipercayai.' }
+    ]
+  },
+  faq: {
+    title: 'Soalan lazim',
+    subtitle: 'Semua yang perlu diketahui sebelum menempah',
+    items: [
+      {
+        q: 'Adakah saya perlukan pengalaman memandu luar jalan?',
+        a: 'Tidak. Pemandu-panduan berpengalaman yang memandu. Anda hanya menikmati pemandangan dan mengambil foto.'
+      },
+      {
+        q: 'Apa yang termasuk dalam harga?',
+        a: 'Kenderaan 4×4 dengan pemandu-panduan, bahan api dan bayaran jalan, pengangkutan hotel, air minuman dan snek, serta hentian foto.'
+      },
+      {
+        q: 'Dalam bahasa apa sokongan disediakan?',
+        a: 'Laman web dan sokongan tersedia dalam tujuh bahasa: Rusia, Kazakh, Inggeris, Korea, Cina, Melayu dan Arab.'
+      },
+      {
+        q: 'Bagaimana pembayaran dibuat?',
+        a: 'Buat masa ini, bayaran dibuat semasa pengesahan tempahan. Pembayaran dalam talian melalui perbankan internet akan ditambah tidak lama lagi.'
+      },
+      {
+        q: 'Apa berlaku jika cuaca buruk?',
+        a: 'Kami memantau ramalan dan keadaan jalan. Pakej boleh dijadualkan semula ke tarikh atau laluan lain secara percuma.'
+      }
+    ]
   }
 };
 

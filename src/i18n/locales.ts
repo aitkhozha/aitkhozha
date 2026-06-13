@@ -54,12 +54,14 @@ export const localeLabel: Record<Locale, string> = {
   ar: 'العربية'
 };
 
-export const localeFlag: Record<Locale, string> = {
-  ru: '🇷🇺',
-  kk: '🇰🇿',
-  en: '🇺🇸',
-  ko: '🇰🇷',
-  zh: '🇨🇳',
-  ms: '🇲🇾',
-  ar: '🇦🇪'
+// Compact 2-letter codes used in the language switcher alongside the native
+// language name. (Replaces the previous emoji flags.)
+export const localeShort: Record<Locale, string> = {
+  ru: 'RU',
+  kk: 'KZ',
+  en: 'EN',
+  ko: 'KO',
+  zh: 'ZH',
+  ms: 'MS',
+  ar: 'AR'
 };
